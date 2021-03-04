@@ -14,3 +14,7 @@ ffmpeg -loop 1 -r 30 -i FRAMES%02d.png -i AUDIO.wav -t 140 -filter_complex \
 :y=(h-text_h)/7[out]" \
 -r 30 -map "[out]" -map 1:a -movflags +faststart -r 30 -pix_fmt yuv420p output.mp4
 ```
+
+## Result
+
+![Example Output](https://raw.githubusercontent.com/discatte/ffmpeg_gif_audio_visualizer/main/script_example_output.png)
